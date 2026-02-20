@@ -139,9 +139,9 @@ int main() {
 		glDrawArrays(GL_POINTS, 3, 1);*/
 
 		//Ej. 2 en una sola linea de comando dibujar los 4 pts
-		glPointSize(10);
-		glDrawArrays(GL_POINTS, 4, 1);
-
+		/*glPointSize(10);
+		glDrawArrays(GL_POINTS, 
+*/
 
 
 		//Ej3en una sola linea de comando dibujar 2 lineas paralelas
@@ -151,6 +151,8 @@ int main() {
 		//Ej.4
 //glDrawArrays(GL_TRIANGLES, 3, 0); 
         
+     //5
+	glDrawElements(GL_TRIANGLES,4, GL_UNSIGNED_INT, 0);
         
         glBindVertexArray(0);
     
