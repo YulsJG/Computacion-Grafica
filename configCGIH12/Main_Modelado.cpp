@@ -202,42 +202,42 @@ int main() {
 
 		glBindVertexArray(VAO);
 	
-	    model = glm::mat4(1.0f);
-		//movio hacia arriba
+	   /* model = glm::mat4(1.0f);
+		movio hacia arriba
 		model = glm::translate(model, glm::vec3(0.0f,1.0f, 0.0f)); 
-		//la alargo
-		model = glm::scale(model, glm::vec3(2.0f, 0.1, 2.0f));
+		la alargo
+		model = glm::scale(model, glm::vec3(2.0f, 0.1, 2.0f));*/
 		
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		////pata 1
-		model = glm::mat4(1.0f);  
-		model = glm::translate(model, glm::vec3(0.8f, 0.5f, 0.8f));  
-		model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f));  
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));  
-		glDrawArrays(GL_TRIANGLES, 0, 36);  
+		//model = glm::mat4(1.0f);  
+		//model = glm::translate(model, glm::vec3(0.8f, 0.5f, 0.8f));  
+		//model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f));  
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));  
+		//glDrawArrays(GL_TRIANGLES, 0, 36);  
 
 		////pata 2
-		model = glm::mat4(1.0f);  
-		model = glm::translate(model, glm::vec3(-0.8f, 0.5f, 0.8f));  
-		model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f));  
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));  
-		glDrawArrays(GL_TRIANGLES, 0, 36);  
+		//model = glm::mat4(1.0f);  
+		//model = glm::translate(model, glm::vec3(-0.8f, 0.5f, 0.8f));  
+		//model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f));  
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));  
+		//glDrawArrays(GL_TRIANGLES, 0, 36);  
 
 		////pata 3
-		model = glm::mat4(1.0f); 
-		model = glm::translate(model, glm::vec3(0.8f, 0.5f, -0.8f)); 
-		model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f)); 
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
-		glDrawArrays(GL_TRIANGLES, 0, 36); 
+		//model = glm::mat4(1.0f); 
+		//model = glm::translate(model, glm::vec3(0.8f, 0.5f, -0.8f)); 
+		//model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f)); 
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
+		//glDrawArrays(GL_TRIANGLES, 0, 36); 
 
 		////pata 4
-		model = glm::mat4(1.0f);  
-		model = glm::translate(model, glm::vec3(-0.8f, 0.5f, -0.8f));  
-		model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f));  
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));  
-		glDrawArrays(GL_TRIANGLES, 0, 36);  
+		//model = glm::mat4(1.0f);  
+		//model = glm::translate(model, glm::vec3(-0.8f, 0.5f, -0.8f));  
+		//model = glm::scale(model, glm::vec3(0.2f, 1.0f, 0.2f));  
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));  
+		//glDrawArrays(GL_TRIANGLES, 0, 36);  
 
 
 
