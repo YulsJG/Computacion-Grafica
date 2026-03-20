@@ -139,14 +139,14 @@ int main( )
 
       
         ////gatito 1
-        //model = glm::mat4(1);  
-        //model = glm::translate(model, glm::vec3(1.0f, 0.0f, 0.0f));
-        //model = glm::rotate(model, glm::radians(45.0f), glm::vec3(1.0f, 0.0f, 0.0f)); 
-        //model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f)); 
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        //cat.Draw(shader);
+        model = glm::mat4(1);  
+        model = glm::translate(model, glm::vec3(1.0f, 0.0f, 0.0f));
+        model = glm::rotate(model, glm::radians(45.0f), glm::vec3(1.0f, 0.0f, 0.0f)); 
+        model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f)); 
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        cat.Draw(shader);
 
-       /* perrito 2
+       //perrito 2
         model = glm::mat4(1);  
         model = glm::translate(model, glm::vec3(-3.0f, -2.0f, -2.0f)); 
         model = glm::rotate(model, glm::radians(60.0f), glm::vec3(1.0f, 0.0f, 0.0f));  
@@ -155,13 +155,13 @@ int main( )
         dog.Draw(shader); 
 
 
-        gatito 2 
+        //gatito 2 
         model = glm::mat4(1);  
         model = glm::translate(model, glm::vec3(2.0f, -1.0f, -1.0f)); 
         model = glm::rotate(model, glm::radians(180.0f), glm::vec3(1.0f, 0.0f, 0.0f));  
         model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f)); 
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model)); 
-        cat.Draw(shader); */
+        cat.Draw(shader); 
          
         // Swap the buffers
         glfwSwapBuffers( window );
