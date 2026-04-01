@@ -63,6 +63,8 @@ void main()
     vec3 result2 = ambient2 + diffuse2 + specular2;
     vec3 result = ambient + diffuse + specular;
     result = result + result2;
+
+
     //color = vec4(result, 1.0f);
     color = vec4(result, 1.0f)*texture(texture_diffuse,TexCoords);
 }
